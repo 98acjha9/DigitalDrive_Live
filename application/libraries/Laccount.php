@@ -97,7 +97,7 @@ class Laccount {
                     $file = $_FILES['userImage']['tmp_name']; 
 			        $sourceProperties = getimagesize($file);
 			        $fileNewName = time();
-			        $folderPath = "https://www.drivedigitally.com/live/uploads/user/profile_image/";
+			        $folderPath = "uploads/user/profile_image/";
 			        $ext = pathinfo($_FILES['userImage']['name'], PATHINFO_EXTENSION);
 			        $imageType = $sourceProperties[2];
 
