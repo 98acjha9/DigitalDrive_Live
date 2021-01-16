@@ -464,7 +464,7 @@
    }
    .comment .comment-footer {
    display: table;
-   width: 100%
+   width: 100% Hd
    }
    .comment .comment-footer>.column {
    display: table-cell;
