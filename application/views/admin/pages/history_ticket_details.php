@@ -176,9 +176,9 @@
                                           </div>
                                           <div class="form-group">
                                              <label for="emailBody" class="col-sm-2 control-label">Email body:</label>
-                                             <!-- <div class="col-sm-10">
+                                             <div class="col-sm-10">
                                                 <textarea name="email_body" class="form-control" rows="20" placeholder="Message..."></textarea>
-                                             </div> -->
+                                             </div>
                                           </div>
                                           <div class="form-group">
                                              <div class="col-sm-offset-2 col-sm-10">
@@ -206,7 +206,7 @@
    <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-<script type="text/javascript" language="" src="https://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+
 <script src="<?php echo base_url()?>/assets/admin/js_css_admin/editor.js"></script>
       <script>
          $(document).ready(function() {
