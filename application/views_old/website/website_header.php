@@ -25,7 +25,7 @@
 		?>
                 <li class="contactBtn"><a href="<?php echo base_url(); ?>post-task-step-1">Post a Task</a></li>
                 <li class="contactBtn lstb"><a href="<?php echo base_url(); ?>sign-in" data-toggle="tooltip" data-placement="top" title="Get Earn! Create Freelancer Account">Freelancer?</a></li>
-                <li class="contactBtn lstb"><a href="<?php echo base_url(); ?>sign-in" data-toggle="tooltip" data-placement="top" title="Outside Of Portal? Don’t Have Account For Quick Earn Get Account For Freelancer For Search Talent For Ur Project Get Client Room Account .">Room?</a></li>
+                <li class="contactBtn lstb"><a href="<?php echo base_url(); ?>" data-toggle="tooltip" data-placement="top" title="Outside Of Portal? Don’t Have Account For Quick Earn Get Account For Freelancer For Search Talent For Ur Project Get Client Room Account .">Room?</a></li>
             </ul>
         </nav>
         <!-- #nav-menu-container -->

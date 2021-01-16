@@ -107,10 +107,10 @@
                         <div class="comment-footer"><span class="comment-meta"><?php echo $user_details->name; ?></span> <span class="comment-meta">   (<?php echo date("F j, Y", strtotime($user_details->dom)) ;?>)<span></div>
                      </div>
                   </div>
-                  <?php  if(!empty($info)){ $vcount = count($info); $vcount2 = 0;
-					//echo "<pre>";print_r($info);die; 
-                        foreach($info as $information) { $vcount2++;	?>
-                  <div class="comment <?php echo ($vcount == $vcount2) ? "last_comment" : "" ?>">
+				   <?php  if(!empty($info)){
+					//echo "<pre>";print_r($info);die;
+                        foreach($info as $information) {	?>
+                  <div class="comment">
                      <div class="comment-author-ava"><img src="<?php echo ($information->user_type=='outbox')?$user_profile_image:base_url('assets/img/logo.png')?>" alt="Avatar"></div>
                      <div class="comment-body">
                         <p class="comment-text"><?php echo $information->email_body ;?></p>
@@ -208,45 +208,11 @@
 <!-- /.content-wrapper -->
 <script type="text/javascript" language="" src="https://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
 <script src="<?php echo base_url()?>/assets/admin/js_css_admin/editor.js"></script>
-<script type="text/javascript" language="javascript">
-   tinymce.init({
-   selector: "textarea",
-   plugins: [
-     "advlist autolink autosave link image lists charmap print preview hr anchor pagebreak spellchecker",
-     "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
-     "table contextmenu directionality emoticons template textcolor paste fullpage textcolor colorpicker textpattern"
-   ],
-   toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-   toolbar2: "cut copy paste | searchreplace | bullist numlist | outdent indent blockquote | undo redo | link unlink anchor image media code | insertdatetime preview | forecolor backcolor",
-   toolbar3: "table | hr removeformat | subscript superscript | charmap emoticons | print fullscreen | ltr rtl | spellchecker | visualchars visualblocks nonbreaking template pagebreak restoredraft",
-   menubar: false,
-   style_formats: [
-     {title: 'Bold text', inline: 'b'},
-     {title: 'Red text', inline: 'span', styles: {color: '#ff0000'}},
-     {title: 'Red header', block: 'h1', styles: {color: '#ff0000'}},
-     {title: 'Example 1', inline: 'span', classes: 'example1'},
-     {title: 'Example 2', inline: 'span', classes: 'example2'},
-     {title: 'Table styles'},
-     {title: 'Table row 1', selector: 'tr', classes: 'tablerow1'}
-   ],
-   templates: [
-     {title: 'Test template 1', content: 'Test 1'},
-     {title: 'Test template 2', content: 'Test 2'}
-   ]
-   });
-</script>
-  <script>
-    $(function () {
-	   $('html, body').animate({
-        scrollTop: $(".last_comment").offset().top - 10
-    }, 1000);
-       
-   });
-   
-   $(document).ready(function() {
-      $("#emailBody").Editor();
-   });
-   </script>
+      <script>
+         $(document).ready(function() {
+            $("#emailBody").Editor();
+         });
+      </script>
 <script type="text/javascript" language="javascript">
    // tinymce.init({
    // selector: "textarea",
