@@ -23,7 +23,7 @@ public function __construct()
 		}
 		$clientId = '688554065697-8bne0fvu2qhlv51nfh41r9j56sfvdqut.apps.googleusercontent.com'; //Google client ID
 		$clientSecret = 'GA_GfdecFevGdjsJ2BEkK1fC'; //Google client secret
-		$redirectURL = 'https://www.drivedigitally.com/dev1room/sign-in';
+		$redirectURL = 'https://www.drivedigitally.com/live/sign-in';
 		
 		//https://curl.haxx.se/docs/caextract.html
 
