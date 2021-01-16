@@ -1959,19 +1959,19 @@ class Users extends CI_Model
 	}
 	
 	
-	public function get_login_status($user_id)
-	{
-      $this->db->select('*');
-	  $this->db->from('user_login_sessions');
-	  $this->db->where('user_id',$user_id);
-	  $prevQuery = $this->db->get();
-      $prevCheck = $prevQuery->num_rows();
-	  $prevResult = $prevQuery->row_object();
-	  if($prevCheck > 0 && $prevResult->status == 1)
-	   return 'l';
-      else
-	   return '';		
-	}
+	// public function get_login_status($user_id)
+	// {
+    //   $this->db->select('*');
+	//   $this->db->from('user_login_sessions');
+	//   $this->db->where('user_id',$user_id);
+	//   $prevQuery = $this->db->get();
+    //   $prevCheck = $prevQuery->num_rows();
+	//   $prevResult = $prevQuery->row_object();
+	//   if($prevCheck > 0 && $prevResult->status == 1)
+	//    return 'l';
+    //   else
+	//    return '';		
+	// }
 	
 	
 	public function get_login_details($user_id)
