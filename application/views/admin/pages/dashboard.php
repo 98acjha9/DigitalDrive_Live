@@ -181,7 +181,7 @@ $(document).ready(function(){
   </script>
 
   <script>
-$.notifySetup({sound: 'https://www.drivedigitally.com/dev1room/assets/audio/notify.wav'});
+$.notifySetup({sound: 'https://www.drivedigitally.com/live/assets/audio/notify.wav'});
 $('.notify').notify();
 </script>
 <script type="text/javascript">
